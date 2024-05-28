@@ -24,7 +24,7 @@ function App() {
               name={productDetail.name[bb]}
               price={productDetail.price[bb]}
               description={productDetail.description[bb]}
-              image={productDetail.image[bb]}/>
+              image={productDetail.image[bb]}/> 
           </div>
           ))
         }
