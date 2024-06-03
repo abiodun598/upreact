@@ -1,7 +1,7 @@
 
 import './App.css';
-
-function Timm() {
+// import React, {useState} from 'react';
+export function Timm() {
   const myname= "Rokeeb";
   return (
     <div className="heme">
@@ -10,5 +10,3 @@ function Timm() {
     
   );
 }
-
-export default Timm;

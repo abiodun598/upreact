@@ -1,6 +1,7 @@
 import './App.css';
-import Timm from './1stbrm';
-import Course from './2ndbrm';
+import {Timm} from './1stbrm';
+import { Course } from './2ndbrm';
+import { Greet } from './2ndbrm';
 import mmm from './power.jpg';
 import shoe from './shoe.jpg';
 import bag from './bag.jpg';
@@ -14,22 +15,26 @@ function App() {
     description: ['5000MAH', 'lether product', 'with skin'],
     image: [mmm, bag, shoe],
   }
+  const flame = true;
   return (
-    <div className="App">
-      <Timm />
-      <div className="sub">
-        {productDetail.name.map((x, bb) => (
-          <div key={bb}>
-            <Course
-              name={productDetail.name[bb]}
-              price={productDetail.price[bb]}
-              description={productDetail.description[bb]}
-              image={productDetail.image[bb]}/> 
-          </div>
+    <>
+      <div className="App">
+        <Timm />
+        <div className="sub">
+          {productDetail.name.map((x, bb) => (
+            <div key={bb}>
+              <Course
+                name={productDetail.name[bb]}
+                price={productDetail.price[bb]}
+                description={productDetail.description[bb]}
+                image={productDetail.image[bb]} />
+            </div>
           ))
-        }
+          }
+        </div>
       </div>
-    </div>
+        <Greet bola={flame} />
+    </>
   );
 }
 

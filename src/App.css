@@ -21,6 +21,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 25px;
 }
 .heme{
   margin: 0px auto;
@@ -52,6 +53,18 @@
   background-color: rgb(182, 189, 182);
   width: 100% !important;
 }
+.he button{
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+.he>div{
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin: 0px auto;
+}
 @media screen and (max-width: 768px){
   .sub{
     display: flex;
@@ -60,8 +73,6 @@
     align-items: center;
     background-color: rgb(4, 255, 0);
     width: fit-content;
-    border-radius: 20px;
-    padding: 25px;
   }
   .he{
     text-align: center;
