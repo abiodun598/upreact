@@ -26,7 +26,7 @@ export function Course(rocky) {
         <img src={rocky.image} alt='joy' />
         <h2> {rocky.name}</h2>
         <div>
-          <h2 style={{ textDecoration: buttonclick ? 'none' : 'line-through' }} buttonclick:false>{price}</h2> 
+          <h2 style={{ textDecoration: buttonclick ? 'none' : 'line-through' }}>{price}</h2> 
           <h2 style={{ display: buttonclick ? 'none' : 'inline-block', marginLeft: '10px'}}>{price}</h2>
         </div>
         <button onClick={toggle}>description</button>{shown &&
