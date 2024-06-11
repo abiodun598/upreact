@@ -3,7 +3,6 @@ import { Timm } from './1stbrm';
 import { Course } from './secondbrm';
 // import { Greet } from './secondbrm';
 import { Form } from './form';
-import { Forrm } from './form2';
 import mmm from './power.jpg';
 import shoe from './shoe.jpg';
 import bag from './bag.jpg';
@@ -48,8 +47,8 @@ function App() {
           element: <Form />
         },
         {
-          path: '/clss',
-          element: <Forrm/>
+          path: '/class',
+          element: <Errorpage/>
         },
       ]
 
