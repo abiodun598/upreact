@@ -21,7 +21,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 25px;
+  padding: 25px 0px;
 }
 .heme{
   margin: 0px auto;
@@ -57,13 +57,34 @@
   padding: 8px;
   border-radius: 5px;
   cursor: pointer;
-  
+  margin-bottom: 10px;
 }
-.he>div{
-  display: flex;
-  flex-direction: row;
+.he span{
+  font-weight: 700;
+  font-size: x-large;
+}
+.lod{
   width: fit-content;
   margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+}
+.bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 0px auto;
+  margin-top: 14px;
+}
+.bar li{
+  list-style-type: none;
+  font-size: 24px;
 }
 @media screen and (max-width: 768px){
   .sub{

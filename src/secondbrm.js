@@ -25,16 +25,16 @@ export function Course(rocky) {
       <div className="he">
         <img src={rocky.image} alt='joy' />
         <h2> {rocky.name}</h2>
-        <div>
-          <h2 style={{ textDecoration: buttonclick ? 'none' : 'line-through' }}>{price}</h2> 
-          <h2 style={{ display: buttonclick ? 'none' : 'inline-block', marginLeft: '10px'}}>{price}</h2>
-        </div>
-        <button onClick={toggle}>description</button>{shown &&
+        <span style={{ textDecoration: buttonclick ? 'none' : 'line-through' }}>&#8358;{rocky.price}</span>
+        <span style={{ display: buttonclick ? 'none' : 'inline-block', marginLeft: '10px' }}>&nbsp; &nbsp; &#8358;{price}</span><br/>
+        <button onClick={toggle}>description</button>
+        {shown &&
           <h2>{rocky.description}</h2>
-        }<br />
+        }
+        <br />
 
-        {buttonclick ? (<button onClick={changeTitle}>Get discount</button>) :
-          (<button onClick={Buttonchange}>changed</button>)}
+        {buttonclick ? (<button onClick={changeTitle}>Get Discount</button>) :
+          (<button onClick={Buttonchange}>Buy Now</button>)}
       </div>
 
     </>
