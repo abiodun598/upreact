@@ -5,7 +5,8 @@ export function Mainnavi() {
         <>
             <div className="bar">
                 <li><Link to='/'>home</Link></li>
-                <li><Link to='/form'>read more</Link></li>
+                <li><Link to='/form'>form</Link></li>
+                <li><Link to='/class'>read more</Link></li>
             </div>
         </>
     )

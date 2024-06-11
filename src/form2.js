@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import './App.css';
- function Form() {
+ export  function  Forrm() {
     
     const [emailEnter, setemailEnter] = useState('')
     const [passwordEnter, setpasswordEnter] = useState('')
